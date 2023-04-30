@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+:root {
+  /* Primary color */
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+  /* Neutral color */
+  --Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  background-color: var(--Light-Grayish-Cyan-Background);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/bg-header-desktop.svg");
+  background-color: var(--Desaturated-Dark-Cyan);
+  height: 150px;
+}
+
+.selected-bar {
+  padding-block: 4rem;
+  width: min(95%, 50rem);
+  margin-inline: auto;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  margin-top: 150px;
+}
+
+.clear {
+  cursor: pointer;
+  color: var(--Dark-Grayish-Cyan);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  align-self: center;
+}
+
+.clear:hover{
+    text-decoration: underline;
+    color: var(--Desaturated-Dark-Cyan);
+}
+
+.cancel {
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  background-color: var(--Desaturated-Dark-Cyan);
+  cursor: pointer;
+  padding: 0.3rem;
+}
+
+.cancel:hover{
+    background-color: black;
+}
+
+.container {
+  padding-block: 4rem;
+  width: min(95%, 50rem);
+  margin-inline: auto;
+}
+
+.logo {
+  padding: 1rem;
+}
+
+.job-listing {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  background-color: #fff;
+}
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.275rem;
+}
+
+.company-details {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.company-name {
+  font-size: 1rem;
+  color: var(--Desaturated-Dark-Cyan);
+  font-weight: 700;
+}
+
+.newish {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: var(--Desaturated-Dark-Cyan);
+  border-radius: 0.7rem;
+  padding: 0.357rem;
+}
+
+.featuredish {
+  color: #fff;
+  font-weight: 500;
+  background-color: black;
+  border-radius: 0.7rem;
+  padding: 0.4rem;
+}
+
+.role {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.role:hover{
+    color: var(--Desaturated-Dark-Cyan);
+}
+
+.featured-listing {
+  border-left: 4px solid var(--Desaturated-Dark-Cyan);
+}
+
+.details {
+  display: flex;
+  color: var(--Dark-Grayish-Cyan);
+  gap: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.selected-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--Desaturated-Dark-Cyan);
+  background-color: var(--Light-Grayish-Cyan-Background);
+  border-radius: 0.5rem;
+  position: relative;
+  border-right: none;
+}
+
+.selected-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-text {
+  padding: 0.4rem;
+}
+
+.tag {
+    cursor: pointer;
+  font-weight: 700;
+  color: var(--Desaturated-Dark-Cyan);
+  background-color: var(--Light-Grayish-Cyan-Background);
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.tag:hover{
+    color: #fff;
+    background-color: var(--Desaturated-Dark-Cyan);
+}
+
+@media (max-width: 790px) {
+  .logo {
+    position: absolute;
+    left: 1rem;
+    top: -2.5rem;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  .company-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.275rem;
+    flex-grow: 1;
+    margin-top: 1rem;
+  }
+
+  .job-listing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .tags {
+    align-self:center;
+    flex-basis: 100%;
+    margin-top: 1.5rem;
+    margin-inline: auto;
+  }
+}
