@@ -34,7 +34,7 @@ header {
 
 .selected-bar {
   padding-block: 4rem;
-  width: min(95%, 50rem);
+  width: min(95%, 65rem);
   margin-inline: auto;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -78,7 +78,7 @@ header {
 
 .container {
   padding-block: 4rem;
-  width: min(95%, 50rem);
+  width: min(95%, 65rem);
   margin-inline: auto;
 }
 
